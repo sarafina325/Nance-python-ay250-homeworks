@@ -1,0 +1,53 @@
+Your score: 12/17
+
+Breakdown & Comments: 
+
+I'm taking off a point for uncommented code. You had 
+like, one cell with comments that saved you. But comment
+more in the future.
+
+----------------------------------------
+Problem 1: 5/5
+----------------------------------------
+1/1: plot with caption
+4/4: analysis
+
+If you haven't looked at the Perlmutter vsn of this figure,
+do. I was shocked by how modern their figs looked, and prefer
+using theirs to the Reiss ones. Which isn't to say theirs are 
+perfect.
+
+not sure what "intelligently placed ticks" to "mirror the 
+distribution of the data" means...
+
+bottom panel range: looks like they prioritized symmetry
+around zero
+
+I really think the lines should be thicker (they almost 
+disappear) in conjunction with your suggestions for 
+separating them visually. But do remember for your 
+own important plots to make lines thick for use in 
+presentations.
+
+
+
+----------------------------------------
+Problem 2: 2/7
+----------------------------------------
+0/3: Recreated plot
+2/3: New dynamic interactions
+0/1: Analysis of changes
+
+You tried? I see code there that looks right-ish
+but it doesn't run for me and it looks like you have basic
+
+
+----------------------------------------
+Problem 3: 5/5
+----------------------------------------
+5/5: Reproduced plot: title, twin_x, legend, limits, linestyles
+
+with subplots(), specify number of rows and cols you want
+(spurious other figure appeared without this)
+
+Graded by C. E. Harris
