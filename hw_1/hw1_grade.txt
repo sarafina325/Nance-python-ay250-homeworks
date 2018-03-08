@@ -1,0 +1,115 @@
+Your score: 17/24
+
+Breakdown & Comments: 
+
+----------------------------------------
+Coding Style: 0/4
+----------------------------------------
+0/1: git repo style
+0/1: code style
+0/1: notebook style
+0/1: code portability
+
+portability -- 
+define paths in one place early on with a variable
+so that another user can change one line of code instead 
+of many
+
+code style --
+
+could have used a bit more commenting to describe logic
+(i.e. problem 1 why are there if-statements about 650 and 200?
+would cropping the image have saved you from doing this step and
+saved memory?)
+
+general note: when you start a for-loop (or as you're writing it), 
+be cognizant of what you're wanting to access and use the appropriate
+generator, i.e. instead of
+    for i in range(1, len(images)):
+        image = images[i]
+        offset = get_offset(first_image, image)
+        print(offset)
+        offsets.append(offset)
+do
+    for img in images[1:]:
+        offset = get_offset(first_image, img)
+        print(offset)
+        offsets.append(offset)
+
+your variable names could be more clear, i.e. "i_sorted"
+instead of just "indeces"
+
+notebook style --
+
+actually pretty good but I'm being a real stickler that you guys
+always label plot axes
+
+
+git repo style --
+
+0_0 sorry but we had so many git issues my conscience won't allow me
+to say you have satisfactory git style
+
+your commit messages could be a bit more clear, 
+like "uploaded problem 1 files" or whatever
+
+----------------------------------------
+Problem 1: 5/6 
+----------------------------------------
+3/3: good attempt of each part
+2/3: successful execution of each part
+
+I don't think you needed to subtract off the covariance matrix...
+
+We were looking for sub-pixel offsets
+
+
+----------------------------------------
+Problem 2: 7/7
+----------------------------------------
+2/2: good attempt of parts 2 and 5
+5/5: successful completion of parts 1-5
+
+you were using rfft so no need to call real(freq)
+
+    indices = np.argsort(pos_freq_real)
+    index = int(fraction*len(freq))
+    new_indices = indices[:index]
+    freq[new_indices] = 0
+better version:
+    i_sorted = np.argsort(spec**2) # sorts from lowest to highest power
+    N_toss = int(fraction*spec.size)
+    spec[ i_sorted[:N_toss] ] = 0
+    
+this. don't do this:
+    from scipy.io.wavfile import read, write
+do
+    from scipy.io import wavfile
+and call wavfile.read, wavefile.write (read and write are
+so general that you really shouldn't call them like this)
+    
+
+----------------------------------------
+Problem 3: 2/2 
+----------------------------------------
+2/2: successful completion of year/lunar estimates
+
+----------------------------------------
+Problem 4: 3/5 
+----------------------------------------
+0/1: understanding what is going on in the plot for part 1
+1/1: good attempt of part 1
+2/3: successful completion of parts 1-3
+
+code thing:
+    if p2 < 0.5 or end is True:
+you can actually evaluate booleans like this:
+    if (p2 < 0.5) or end:
+
+you never did a rolling average for the "tracking" part?
+
+you didn't report the number of *points* for part 2 (and also
+you know it can't be 53% because that would be a 6-point lead
+which from part 1 we know doesn't always show Clinton ahead)
+
+Graded by C. E. Harris
