@@ -1,10 +1,16 @@
-Your score: 12/17
+Your score: 16/17
 
 Breakdown & Comments: 
 
-I'm taking off a point for uncommented code. You had 
-like, one cell with comments that saved you. But comment
-more in the future.
+Comment more in the future. You had one commented
+cell that saved you from losing a point due to this.
+Steven has really useful comments; check out what I want
+by looking at how he does it.
+
+Never do this again: 
+    from bokeh.plotting import *
+Friends don't let friends import *. 
+
 
 ----------------------------------------
 Problem 1: 5/5
@@ -32,14 +38,14 @@ presentations.
 
 
 ----------------------------------------
-Problem 2: 2/7
+Problem 2: 6/7
 ----------------------------------------
-0/3: Recreated plot
-2/3: New dynamic interactions
+3/3: Recreated plot
+3/3: New dynamic interactions
 0/1: Analysis of changes
 
-You tried? I see code there that looks right-ish
-but it doesn't run for me and it looks like you have basic
+Try using Latex in your labels e.g.
+r'$\log L \mathrm{[L_\odot]}$'
 
 
 ----------------------------------------
