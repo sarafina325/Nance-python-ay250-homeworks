@@ -1,0 +1,7 @@
+Please run the attached Python notebook for image validation / classification
+You may need to run the entire notebook to train your random forest algorithm.
+
+We got 8% accuracy when running this, which wasn't great--but for image classification using a random forest algorithm,
+that's not super surprising. 
+
+Using deep learning/a CNN will likely yield much better results. 
