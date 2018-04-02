@@ -5,3 +5,6 @@ We got 8% accuracy when running this, which wasn't great--but for image classifi
 that's not super surprising. 
 
 Using deep learning/a CNN will likely yield much better results. 
+
+I didn't include the training images in this directory because of size limitations (figured you didn't want those 
+images from everyone). 
