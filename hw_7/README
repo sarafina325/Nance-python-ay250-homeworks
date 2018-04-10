@@ -1,0 +1,4 @@
+Included is the python jupyter notebook and the images file, which includes the images relevant for the panorama stitching.
+
+Note: the resultant panorama was too large to upload to GitHub, so you'll need to run the entire jupyter notebook to get
+the final image saved. 
