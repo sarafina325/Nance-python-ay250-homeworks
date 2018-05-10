@@ -1,0 +1,18 @@
+This directory contains the files needed to train the CNN and RF. Below is a description of everything in this directory.
+
+lsst_mocks_single/: This directory contains simulations of images of the LSST best single epoch images. This is divided into two subdirs:
+
+	/lensed_outputs/: where lensed images are saved
+	/unlensed_outputs/: where unlensed images are saved
+
+Each of these subdirs includes a /0/ subdirectory, which includes our training set.
+
+I was only able to upload 100 of each type of image due to size constraints in the repo. Note that each image is a -tar.gz file. To unzip, do the following:
+	' find . -type f -exec gunzip {} + ' 
+in your terminal.
+
+If you'd like access to the full suite of simulated images, proceed to the following link: 
+	' http://portal.nersc.gov/project/hacc/nanli/lsst_sl_mocks/ '
+and download ' lsst_sl_mocks/tar '
+
+A warning that it takes some non-trivial time to download the FITS images into a working .py notebook, depending on the number of images that you download. 
