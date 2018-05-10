@@ -1,4 +1,4 @@
-This directory contains the files needed to train the CNN and RF. Below is a description of everything in this directory.
+This directory contains the files needed to train the CNN and RNN. Below is a description of everything in this directory.
 
 lsst_mocks_single/: This directory contains simulations of images of the LSST best single epoch images. This is divided into two subdirs:
 
